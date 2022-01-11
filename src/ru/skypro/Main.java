@@ -40,21 +40,21 @@ public class Main {
         System.out.println();
 
 // task 3
-        for (int i = mass3.length-1; i >= 0; i--) {
+        for (int i = mass3.length - 1; i >= 0; i--) {
             System.out.print(mass3[i]);
             if (i != 0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = doubleNum.length-1; i >= 0; i--) {
+        for (int i = doubleNum.length - 1; i >= 0; i--) {
             System.out.print(doubleNum[i]);
             if (i != 0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = boxSize.length-1; i >= 0; i--) {
+        for (int i = boxSize.length - 1; i >= 0; i--) {
             System.out.print(boxSize[i]);
             if (i != 0) {
                 System.out.print(", ");
@@ -67,10 +67,13 @@ public class Main {
             if (mass3[i] % 2 != 0) {
                 mass3[i] += 1;
                 System.out.print(mass3[i]);
-                if (i != mass3.length - 1) {
-                    System.out.print(", ");
-                }
+            } else {
+                System.out.print(mass3[i]);
+            }
+            if (i != mass3.length - 1) {
+                System.out.print(", ");
             }
         }
     }
 }
+
